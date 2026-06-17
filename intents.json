@@ -44,6 +44,7 @@
     {
       "tag": "productos",
       "patterns": [
+        "productos", "que teneis", "que vendes", "que vendemos",
         "que productos teneis", "que vendeis", "catalogo de productos",
         "que ofreceis", "productos disponibles", "que puedo comprar",
         "teneis stock", "que articulos teneis", "ver productos",

@@ -21,12 +21,12 @@ CORS(app)
 BASE = Path(__file__).parent
 MODELO_PATH = BASE / 'chatbot_model.pkl'
 
-if not MODELO_PATH.exists():
-    from train import entrenar
-    entrenar(
-        ruta_datos=str(BASE / 'intents.json'),
-        ruta_modelo=str(MODELO_PATH)
-    )
+from train import entrenar
+
+entrenar(
+    ruta_datos=str(BASE / 'intents.json'),
+    ruta_modelo=str(MODELO_PATH)
+)
 
 with open(MODELO_PATH, 'rb') as f:
     modelo_data = pickle.load(f)
@@ -165,8 +165,10 @@ def chat():
     if not data or 'mensaje' not in data:
         return jsonify({'error': 'Falta el campo mensaje'}), 400
     resultado = obtener_respuesta(data['mensaje'])
-    return jsonify(resultado)
 
+    print("Resultado enviado:", resultado)
+
+    return jsonify(resultado)
 
 @app.route('/intents', methods=['GET'])
 def listar_intents():

@@ -160,13 +160,27 @@ def entrenar(ruta_datos: str, ruta_modelo: str):
 
 # ── Función de inferencia ────────────────────────────────────────────────────
 
-def predecir(pipeline, texto: str, umbral: float = 0.35):
+def predecir(pipeline, texto: str, umbral: float = 0.15):
     texto_norm = normalizar(texto)
+
     probs = pipeline.predict_proba([texto_norm])[0]
     clases = pipeline.classes_
+
     idx_max = np.argmax(probs)
+
     confianza = probs[idx_max]
-    intent = clases[idx_max] if confianza >= umbral else 'desconocido'
+    intent = clases[idx_max]
+
+    print("\n----- PREDICCIÓN -----")
+    print("Pregunta:", texto)
+    print("Normalizada:", texto_norm)
+    print("Intent predicho:", intent)
+    print("Confianza:", confianza)
+    print("----------------------\n")
+
+    if confianza < umbral:
+        intent = "desconocido"
+
     return intent, float(confianza)
 
 

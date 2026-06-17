@@ -160,7 +160,7 @@ def entrenar(ruta_datos: str, ruta_modelo: str):
 
 # ── Función de inferencia ────────────────────────────────────────────────────
 
-def predecir(pipeline, texto: str, umbral: float = 0.15):
+def predecir(pipeline, texto: str, umbral: float = 0.35):
     texto_norm = normalizar(texto)
 
     probs = pipeline.predict_proba([texto_norm])[0]

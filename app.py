@@ -21,6 +21,11 @@ CORS(app)
 BASE = Path(__file__).parent
 MODELO_PATH = BASE / 'chatbot_model.pkl'
 
+INTENTS_PATH = BASE / 'intents.json'
+
+with open(INTENTS_PATH, 'r', encoding='utf-8') as f:
+    intents_data = json.load(f)
+
 from train import entrenar
 
 entrenar(
@@ -36,14 +41,30 @@ respuestas = modelo_data['respuestas']
 
 
 def obtener_respuesta(texto: str):
+
+    texto_norm = normalizar(texto)
+
+    # Buscar coincidencia exacta primero
+    for intent in intents_data["intents"]:
+        patrones = [normalizar(p) for p in intent["patterns"]]
+
+        if texto_norm in patrones:
+            return {
+                "intent": intent["tag"],
+                "confianza": 1.0,
+                "respuesta": random.choice(intent["responses"])
+            }
+
+    # Si no hay coincidencia exacta, usar IA
     intent, confianza = predecir(pipeline, texto)
+
     if intent == 'desconocido' or intent not in respuestas:
         return {
             'intent': 'desconocido',
             'confianza': confianza,
-            'respuesta': "Lo siento, no he entendido tu pregunta. "
-                         "¿Puedes reformularla o preguntar por horarios, productos, contacto, envíos o devoluciones?"
+            'respuesta': "Lo siento, no he entendido tu pregunta."
         }
+
     return {
         'intent': intent,
         'confianza': round(confianza, 3),

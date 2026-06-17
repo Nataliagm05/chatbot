@@ -37,6 +37,7 @@ def normalizar(texto: str) -> str:
       3. Eliminar caracteres no alfanuméricos
       4. Strip de espacios
     """
+    texto = texto.encode('latin-1', errors='ignore').decode('utf-8', errors='ignore')
     texto = texto.lower().strip()
     # Normalizar acentos
     reemplazos = {

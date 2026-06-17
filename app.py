@@ -13,7 +13,9 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from train import normalizar, predecir
 
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 # Cargar modelo al iniciar
 BASE = Path(__file__).parent

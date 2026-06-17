@@ -1,0 +1,141 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola", "buenos dias", "buenas tardes", "buenas noches",
+        "hey", "que tal", "hola buenas", "saludos", "hi", "hello",
+        "buen dia", "como estas", "ey hola"
+      ],
+      "responses": [
+        "Hola! En que puedo ayudarte hoy?",
+        "Buenos dias! Estoy aqui para ayudarte.",
+        "Hola! Que necesitas saber?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "adios", "hasta luego", "nos vemos", "chao", "bye",
+        "hasta pronto", "me voy", "gracias adios", "hasta manana",
+        "ciao", "cuidate", "hasta la vista"
+      ],
+      "responses": [
+        "Hasta luego! Ha sido un placer ayudarte.",
+        "Adios! No dudes en volver si tienes mas preguntas.",
+        "Hasta pronto!"
+      ]
+    },
+    {
+      "tag": "horario",
+      "patterns": [
+        "cual es el horario", "a que hora abren", "cuando cierran",
+        "horario de atencion", "estan abiertos", "hora de apertura",
+        "hora de cierre", "horario de la tienda", "cuando puedo llamar",
+        "dias que abren", "horario comercial", "atienden los fines de semana",
+        "abren los sabados", "abren los domingos", "de que hora a que hora",
+        "horario", "que horario teneis", "a que hora cerráis"
+      ],
+      "responses": [
+        "Nuestro horario de atencion es de lunes a viernes de 8:00 a 18:00h, y sabados de 9:00 a 13:00h.",
+        "Estamos disponibles de lunes a viernes de 8:00 a 18:00h. Los sabados abrimos de 9:00 a 13:00h."
+      ]
+    },
+    {
+      "tag": "productos",
+      "patterns": [
+        "que productos teneis", "que vendeis", "catalogo de productos",
+        "que ofreceis", "productos disponibles", "que puedo comprar",
+        "teneis stock", "que articulos teneis", "ver productos",
+        "mostrar catalogo", "que hay disponible", "lista de productos",
+        "que servicios ofreceis", "teneis novedades", "materiales",
+        "que materiales teneis", "aislamiento", "impermeabilizacion",
+        "ferreteria", "policarbonatos", "maquinaria"
+      ],
+      "responses": [
+        "Ofrecemos materiales de aislamiento, impermeabilizacion, ferreteria, policarbonatos y alquiler de maquinaria. Trabajamos con marcas lideres como Sika, Bostik, Ursa y mas.",
+        "Tenemos productos de aislamiento, impermeabilizacion, ferreteria y policarbonatos. Tambien alquilamos maquinaria. Visitanos en Toledo o llama al 925 23 34 54."
+      ]
+    },
+    {
+      "tag": "precio",
+      "patterns": [
+        "cuanto cuesta", "que precio tiene", "precio de", "cuanto vale",
+        "tarifas", "cuanto es", "me puedes dar el precio",
+        "precio del producto", "coste", "cuanto me cobrareis",
+        "es caro", "hay descuentos", "teneis ofertas", "precio especial",
+        "lista de precios", "presupuesto"
+      ],
+      "responses": [
+        "Los precios varian segun el producto. Puedes solicitar un presupuesto sin compromiso en nuestra web o llamando al 925 23 34 54.",
+        "Para consultar precios especificos, contactanos en el 925 23 34 54 o en almacen@olivillatres.com y te damos un presupuesto personalizado."
+      ]
+    },
+    {
+      "tag": "contacto",
+      "patterns": [
+        "como contacto", "telefono", "email", "correo electronico",
+        "como os llamo", "numero de telefono", "direccion",
+        "donde estais", "como llegar", "ubicacion", "donde estas",
+        "formas de contacto", "hablar con alguien", "hablar con una persona",
+        "atencion telefonica", "whatsapp", "donde os encuentro"
+      ],
+      "responses": [
+        "Puedes contactarnos por telefono en el 925 23 34 54, por email en almacen@olivillatres.com, o visitarnos en Calle Rio Valdecelada 7, Toledo.",
+        "Estamos en Calle Rio Valdecelada 7, Toledo. Telefono: 925 23 34 54. Email: almacen@olivillatres.com."
+      ]
+    },
+    {
+      "tag": "ubicacion",
+      "patterns": [
+        "donde estais", "direccion", "donde os encuentro", "como llegar",
+        "en que ciudad estais", "estais en toledo", "donde esta el almacen",
+        "ubicacion del almacen", "cerca de toledo"
+      ],
+      "responses": [
+        "Estamos en Calle Rio Valdecelada 7, 45007 Toledo. Puedes llamarnos al 925 23 34 54 para cualquier consulta.",
+        "Nos encontramos en Calle Rio Valdecelada 7, Toledo. Ven a visitarnos!"
+      ]
+    },
+    {
+      "tag": "devolucion",
+      "patterns": [
+        "quiero devolver", "politica de devoluciones", "como devuelvo",
+        "puedo devolver", "cambio de producto", "no me gusta el producto",
+        "producto defectuoso", "llego roto", "devolucion de dinero",
+        "reembolso", "garantia", "plazo de devolucion", "no funciona",
+        "esta roto", "quiero cambiarlo"
+      ],
+      "responses": [
+        "Para gestionar una devolucion o cambio, contactanos en el 925 23 34 54 o en almacen@olivillatres.com y te indicamos los pasos a seguir.",
+        "Aceptamos devoluciones y cambios. Llama al 925 23 34 54 o escribe a almacen@olivillatres.com para iniciar el proceso."
+      ]
+    },
+    {
+      "tag": "pago",
+      "patterns": [
+        "como pago", "metodos de pago", "aceptais tarjeta",
+        "pago en efectivo", "bizum", "paypal", "transferencia",
+        "pago contra reembolso", "formas de pago",
+        "aceptais visa", "pago online", "se puede pagar a plazos"
+      ],
+      "responses": [
+        "Aceptamos tarjeta de credito y debito, transferencia bancaria y efectivo en tienda.",
+        "Puedes pagar con tarjeta, transferencia bancaria o efectivo. Consultanos para mas informacion."
+      ]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": [
+        "gracias", "muchas gracias", "te lo agradezco", "muy amable",
+        "genial gracias", "perfecto gracias", "ok gracias", "thanks",
+        "de gran ayuda", "me has ayudado", "muy util"
+      ],
+      "responses": [
+        "De nada! Hay algo mas en lo que pueda ayudarte?",
+        "Con mucho gusto! Estoy aqui para lo que necesites.",
+        "Encantado de ayudar!"
+      ]
+    }
+  ]
+}

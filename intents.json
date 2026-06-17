@@ -74,6 +74,7 @@
     {
       "tag": "contacto",
       "patterns": [
+        "contacto", "como os contacto", "telefono de contacto", "email de contacto",
         "como contacto", "telefono", "email", "correo electronico",
         "como os llamo", "numero de telefono", "direccion",
         "donde estais", "como llegar", "ubicacion", "donde estas",

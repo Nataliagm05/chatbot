@@ -21,6 +21,13 @@ CORS(app)
 BASE = Path(__file__).parent
 MODELO_PATH = BASE / 'chatbot_model.pkl'
 
+if not MODELO_PATH.exists():
+    from train import entrenar
+    entrenar(
+        ruta_datos=str(BASE / 'intents.json'),
+        ruta_modelo=str(MODELO_PATH)
+    )
+
 with open(MODELO_PATH, 'rb') as f:
     modelo_data = pickle.load(f)
 

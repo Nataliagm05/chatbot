@@ -21,6 +21,8 @@ CORS(app)
 BASE = Path(__file__).parent
 MODELO_PATH = BASE / 'chatbot_model.pkl'
 
+if MODELO_PATH.exists():
+    MODELO_PATH.unlink()
 if not MODELO_PATH.exists():
     from train import entrenar
     entrenar(

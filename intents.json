@@ -37,8 +37,8 @@
         "horario", "que horario teneis", "a que hora cerráis"
       ],
       "responses": [
-        "Nuestro horario de atencion es de lunes a viernes de 8:00 a 18:00h, y sabados de 9:00 a 13:00h.",
-        "Estamos disponibles de lunes a viernes de 8:00 a 18:00h. Los sabados abrimos de 9:00 a 13:00h."
+        "Nuestro horario de atencion es de lunes a viernes de 9:00 a 14:00h, y de 16:00 a 19:00h.",
+        "Estamos disponibles de lunes a viernes de 9:00 a 14:00h, y de 16:00 a 19:00h. Los fines de semana cerramos."
       ]
     },
     {

@@ -547,9 +547,10 @@
       ]
     },
     {
-      "tag": "mortero_general",
+      "tag": "mortero_general_sika",
       "patterns": [
         "mortero sika",
+        "morteros sika",
         "quiero mortero sika",
         "que morteros de sika teneis",
         "mortero reparacion sika",
@@ -561,7 +562,7 @@
       ]
     },
     {
-      "tag": "mortero_general",
+      "tag": "mortero_general_puma",
       "patterns": [
         "mortero puma",
         "quiero mortero puma",

@@ -32,6 +32,7 @@ CORS(app, resources={r"/*": {
 }})
 
 
+
 # ── Cargar datos ─────────────────────────────────────────────────────────────
 
 MODELO_PATH  = BASE / 'chatbot_model.pkl'

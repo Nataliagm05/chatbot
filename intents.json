@@ -382,6 +382,253 @@
       "responses": [
         "Contamos con placas de yeso de diferentes grosores y medida y usos, se puede utilizar para lugares donde no hay humedad ni fuego, y hay otras que se usan en sitios húmedos, como baños, y otros y que son resistentes al fuego.  También contamos con la perfilería y los tornillos para su colocación. Contamos con pasta de agarre o espuma para pegar las placas a la superficie requerida."
       ]
+    },
+    {
+      "tag": "gas_radon",
+      "patterns": [
+        "que es gas radon",
+        "que es la lamina radon",
+        "para que sirve el gas radon",
+        "puedo utilizar la lamina radon para aerotermia",
+        "lamina radon",
+        "radon"
+      ],
+      "responses": [
+        "La lámina radón sirve para absorber los gases del suelo y evitar que suban. Se coloca en el forjado del suelo. Para más info llámanos al 925 23 34 54."
+      ]
+    },
+    {
+      "tag": "malla_cemento_yeso",
+      "patterns": [
+        "teneis malla para cemento",
+        "teneis malla para yeso",
+        "teneis malla revoco",
+        "malla cemento",
+        "malla yeso",
+        "malla revoco"
+      ],
+      "responses": [
+        "Sí, contamos con malla para cemento y yeso. Llámanos al 925 23 34 54 para más información."
+      ]
+    },
+    {
+      "tag": "malla_huevera",
+      "patterns": [
+        "teneis malla huevera",
+        "lamina drenaje",
+        "malla drenaje",
+        "lamina drenaje geotextil",
+        "humedad primer forjado"
+      ],
+      "responses": [
+        "Sí, contamos con lámina de drenaje (malla huevera) de 400 gr. También tenemos lámina de drenaje con geotextil para la humedad del primer forjado de la pared."
+      ]
+    },
+    {
+      "tag": "perfil_lamina_pvc",
+      "patterns": [
+        "perfil para lamina pvc",
+        "perfil pvc",
+        "remate lamina pvc",
+        "como coloco el perfil pvc"
+      ],
+      "responses": [
+        "Sí, contamos con perfil para lámina PVC. Puede colocarse con tacos de golpeo o con calor para que se adhiera a la lámina, y después sellarlo por arriba con un MS Polímero de Bostik."
+      ]
+    },
+    {
+      "tag": "perfil_manta_asfaltica",
+      "patterns": [
+        "perfil para manta asfaltica",
+        "remate manta asfaltica",
+        "perfil manta",
+        "como coloco el perfil de manta asfaltica"
+      ],
+      "responses": [
+        "Sí, contamos con perfil para manta asfáltica. Se coloca con tacos de golpeo, poniendo la manta asfáltica debajo del perfil, y después se sella por arriba con un MS Polímero de Bostik."
+      ]
+    },
+    {
+      "tag": "aislamiento_extruido_xps",
+      "patterns": [
+        "teneis extruido",
+        "que puedo poner para aislar la cubierta",
+        "que puedo usar para aislar la camara",
+        "que pongo para aislamiento termico",
+        "que pongo para aislar tejados",
+        "que pongo debajo de las tejas",
+        "xps aislamiento",
+        "panel extruido",
+        "poliestireno extruido"
+      ],
+      "responses": [
+        "Contamos con XPS (extruido) para cualquier necesidad de aislamiento, en diferentes grosores y para distintos lugares: cubiertas, cámaras, tejados, bajo tejas... Llámanos al 925 23 34 54 y te asesoramos."
+      ]
+    },
+    {
+      "tag": "laminas_impermeables_tejado",
+      "patterns": [
+        "que pongo para aislar las goteras del tejado",
+        "que pongo para evitar las goteras del tejado",
+        "teneis laminas impermeables para tejados",
+        "lamina impermeable tejado",
+        "impermeabilizar tejado"
+      ],
+      "responses": [
+        "Contamos con láminas impermeabilizantes para distintos usos y superficies, incluidos tejados. Llámanos al 925 23 34 54 o escríbenos a almacen@olivillatres.com y te recomendamos la más adecuada."
+      ]
+    },
+    {
+      "tag": "falso_techo_naves",
+      "patterns": [
+        "que material se usa para falso techos para naves",
+        "que puedo poner como falso techo",
+        "falso techo nave",
+        "alumisol",
+        "falso techo industrial"
+      ],
+      "responses": [
+        "Contamos con dos productos para falso techo en naves: 1) Alumisol en placa de 1,20×1,20 m. 2) Poliestireno expandido de 1,20×1,00 m y 1,00×1,00 m en distintos grosores."
+      ]
+    },
+    {
+      "tag": "policarbonato",
+      "patterns": [
+        "teneis policarbonato",
+        "de que tamaño es la placa de policarbonato",
+        "teneis policarbonato transparente",
+        "teneis policarbonato blanco",
+        "teneis planchas traslucidas",
+        "placa policarbonato",
+        "policarbonato medidas"
+      ],
+      "responses": [
+        "Contamos con policarbonatos en color blanco hielo y traslúcido en plancha de 3,00×2,10 m o 6,00×2,10 m en diferentes grosores. También contamos con metacrilatos. Para más info llámanos al 925 23 34 54."
+      ]
+    },
+    {
+      "tag": "metacrilato",
+      "patterns": [
+        "teneis metacrilato",
+        "teneis metacrilato transparente",
+        "teneis metacrilato blanco",
+        "planchas metacrilato",
+        "metacrilato medidas",
+        "metacrilato cristal"
+      ],
+      "responses": [
+        "Contamos con planchas de metacrilato en color liso cristal o blanco hielo, en diferentes grosores y en tamaño 1,50×2,00 m y 3,00×2,00 m. También contamos con policarbonatos."
+      ]
+    },
+    {
+      "tag": "placas_poliester_porche",
+      "patterns": [
+        "teneis algo para tapar para hacer un porche",
+        "teneis placas de poliester",
+        "teneis planchas de poliester",
+        "placa poliester",
+        "plancha para porche",
+        "cubierta porche translucida"
+      ],
+      "responses": [
+        "Contamos con placas de poliéster en onda pequeña, onda grande y trapezoidal en diferentes medidas: onda grande 3,00×1,10 m y 2,00×1,10 m; onda pequeña 3,00×1,15 m y 2,00×1,15 m; trapezoidal 6,00×1,11 m y 3,00×1,11 m."
+      ]
+    },
+    {
+      "tag": "mortero_general",
+      "patterns": [
+        "teneis mortero",
+        "mortero gris",
+        "mortero blanco",
+        "mortero saco",
+        "mortero de uso normal"
+      ],
+      "responses": [
+        "Contamos con mortero en color gris y blanco en saco de 25 kg de uso normal. También tenemos morteros de reparación, mortero rápido y mortero impermeabilizante de la marca Puma."
+      ]
+    },
+    {
+      "tag": "pegoland",
+      "patterns": [
+        "teneis pegoland",
+        "pegoland profesional",
+        "cola para baldosas puma",
+        "adhesivo ceramica puma",
+        "pegoland blanco"
+      ],
+      "responses": [
+        "Contamos con Pegoland Profesional blanco nº002 en saco de 20 kg (marca Puma) y Pegoland Interiores color blanco nº161 (marca Puma)."
+      ]
+    },
+    {
+      "tag": "pegoland_sika",
+      "patterns": [
+        "teneis pegoland de sika",
+        "cola sika para baldosas",
+        "lanko flexible",
+        "lanko especial plus",
+        "adhesivo sika ceramica"
+      ],
+      "responses": [
+        "Contamos con Lanko Flexible en saco de 25 kg para todo tipo de superficies, y Lanko Especial Plus en saco de 25 kg especial para placa de yeso y zonas húmedas."
+      ]
+    },
+    {
+      "tag": "mortero_sika",
+      "patterns": [
+        "teneis mortero de sika",
+        "mortero reparacion sika",
+        "mortero rapido sika",
+        "mortero impermeabilizacion sika"
+      ],
+      "responses": [
+        "Contamos con morteros Sika de reparación, mortero rápido y mortero de impermeabilización. Llámanos al 925 23 34 54 para más detalles."
+      ]
+    },
+    {
+      "tag": "impermeabilizar_paredes",
+      "patterns": [
+        "que teneis para impermeabilizar paredes",
+        "que teneis para impermeabilizar exteriores",
+        "que pongo para que no pase el agua del exterior para adentro",
+        "que pongo para que no me salgan humedades en la pared interior",
+        "humedad en la pared",
+        "impermeabilizar fachada exterior",
+        "agua que entra por la pared"
+      ],
+      "responses": [
+        "Te recomendamos el Sikagard 711 TR: se aplican 2 manos fresco sobre fresco, una mano en vertical y la siguiente en horizontal. Llámanos al 925 23 34 54 si necesitas más información."
+      ]
+    },
+    {
+      "tag": "sellador_pegado",
+      "patterns": [
+        "que teneis para sellar y pegar",
+        "que teneis para pegar y sellar aluminio",
+        "que teneis para pegar y sellar azulejo",
+        "que teneis para pegar y sellar madera",
+        "que teneis para pegar y sellar materiales de construccion",
+        "adhesivo sellador construccion",
+        "pegar y sellar"
+      ],
+      "responses": [
+        "Contamos con Poliuretano Premium P795 y MS H750 de Bostik en color marrón, blanco y gris. Se aplica con pistola de silicona. Para aluminio, azulejo, madera y materiales de construcción en general."
+      ]
+    },
+    {
+      "tag": "malla_antipaloma",
+      "patterns": [
+        "teneis malla antipaloma",
+        "teneis malla para que no pasen las palomas",
+        "teneis malla para que no pasen los pajaros",
+        "teneis pinchos para que no se paren las palomas",
+        "malla antipajaro",
+        "pinchos palomas",
+        "pinchos canalon"
+      ],
+      "responses": [
+        "Contamos con mallas antipaloma o antipájaro de diferentes medidas y con pinchos para canalones, terrazas y otras superficies. Llámanos al 925 23 34 54 para más información."
+      ]
     }
   ]
 }

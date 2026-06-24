@@ -20,6 +20,10 @@ import sys
 BASE = Path(__file__).parent
 sys.path.insert(0, str(BASE))
 
+import train
+print(">>> TRAIN DESDE:", train.__file__)
+print(">>> TIENE vectorizar:", hasattr(train, 'vectorizar'))
+
 from train import normalizar, predecir
 from retriever import Retriever          # ← NUEVO
 
@@ -258,4 +262,4 @@ def listar_intents():
 
 if __name__ == '__main__':
     print("Servidor iniciado en http://localhost:5000")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)

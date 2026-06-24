@@ -3,9 +3,19 @@
     {
       "tag": "saludo",
       "patterns": [
-        "hola", "buenos dias", "buenas tardes", "buenas noches",
-        "hey", "que tal", "hola buenas", "saludos", "hi", "hello",
-        "buen dia", "como estas", "ey hola"
+        "hola",
+        "buenos dias",
+        "buenas tardes",
+        "buenas noches",
+        "hey",
+        "que tal",
+        "hola buenas",
+        "saludos",
+        "hi",
+        "hello",
+        "buen dia",
+        "como estas",
+        "ey hola"
       ],
       "responses": [
         "Hola! En que puedo ayudarte hoy?",
@@ -16,9 +26,18 @@
     {
       "tag": "despedida",
       "patterns": [
-        "adios", "hasta luego", "nos vemos", "chao", "bye",
-        "hasta pronto", "me voy", "gracias adios", "hasta manana",
-        "ciao", "cuidate", "hasta la vista"
+        "adios",
+        "hasta luego",
+        "nos vemos",
+        "chao",
+        "bye",
+        "hasta pronto",
+        "me voy",
+        "gracias adios",
+        "hasta manana",
+        "ciao",
+        "cuidate",
+        "hasta la vista"
       ],
       "responses": [
         "Hasta luego! Ha sido un placer ayudarte.",
@@ -29,12 +48,24 @@
     {
       "tag": "horario",
       "patterns": [
-        "cual es el horario", "a que hora abren", "cuando cierran",
-        "horario de atencion", "estan abiertos", "hora de apertura",
-        "hora de cierre", "horario de la tienda", "cuando puedo llamar",
-        "dias que abren", "horario comercial", "atienden los fines de semana",
-        "abren los sabados", "abren los domingos", "de que hora a que hora",
-        "horario", "que horario teneis", "a que hora cerráis"
+        "cual es el horario",
+        "a que hora abren",
+        "cuando cierran",
+        "horario de atencion",
+        "estan abiertos",
+        "hora de apertura",
+        "hora de cierre",
+        "horario de la tienda",
+        "cuando puedo llamar",
+        "dias que abren",
+        "horario comercial",
+        "atienden los fines de semana",
+        "abren los sabados",
+        "abren los domingos",
+        "de que hora a que hora",
+        "horario",
+        "que horario teneis",
+        "a que hora cerráis"
       ],
       "responses": [
         "Nuestro horario de atencion es de lunes a viernes de 9:00 a 14:00h, y de 16:00 a 19:00h.",
@@ -44,14 +75,31 @@
     {
       "tag": "productos",
       "patterns": [
-        "productos", "que teneis", "que vendes", "que vendemos",
-        "que productos teneis", "que vendeis", "catalogo de productos",
-        "que ofreceis", "productos disponibles", "que puedo comprar",
-        "teneis stock", "que articulos teneis", "ver productos",
-        "mostrar catalogo", "que hay disponible", "lista de productos",
-        "que servicios ofreceis", "teneis novedades", "materiales",
-        "que materiales teneis", "aislamiento", "impermeabilizacion",
-        "ferreteria", "policarbonatos", "maquinaria"
+        "productos",
+        "que teneis",
+        "que vendes",
+        "que vendemos",
+        "que productos teneis",
+        "que vendeis",
+        "catalogo de productos",
+        "que ofreceis",
+        "productos disponibles",
+        "que puedo comprar",
+        "teneis stock",
+        "que articulos teneis",
+        "ver productos",
+        "mostrar catalogo",
+        "que hay disponible",
+        "lista de productos",
+        "que servicios ofreceis",
+        "teneis novedades",
+        "materiales",
+        "que materiales teneis",
+        "aislamiento",
+        "impermeabilizacion",
+        "ferreteria",
+        "policarbonatos",
+        "maquinaria"
       ],
       "responses": [
         "Ofrecemos materiales de aislamiento, impermeabilizacion, ferreteria, policarbonatos y alquiler de maquinaria. Trabajamos con marcas lideres como Sika, Bostik, Ursa y mas.",
@@ -61,11 +109,22 @@
     {
       "tag": "precio",
       "patterns": [
-        "cuanto cuesta", "que precio tiene", "precio de", "cuanto vale",
-        "tarifas", "cuanto es", "me puedes dar el precio",
-        "precio del producto", "coste", "cuanto me cobrareis",
-        "es caro", "hay descuentos", "teneis ofertas", "precio especial",
-        "lista de precios", "presupuesto"
+        "cuanto cuesta",
+        "que precio tiene",
+        "precio de",
+        "cuanto vale",
+        "tarifas",
+        "cuanto es",
+        "me puedes dar el precio",
+        "precio del producto",
+        "coste",
+        "cuanto me cobrareis",
+        "es caro",
+        "hay descuentos",
+        "teneis ofertas",
+        "precio especial",
+        "lista de precios",
+        "presupuesto"
       ],
       "responses": [
         "Los precios varian segun el producto. Puedes solicitar un presupuesto sin compromiso en nuestra web o llamando al 925 23 34 54.",
@@ -75,12 +134,27 @@
     {
       "tag": "contacto",
       "patterns": [
-        "contacto", "como os contacto", "telefono de contacto", "email de contacto",
-        "como contacto", "telefono", "email", "correo electronico",
-        "como os llamo", "numero de telefono", "direccion",
-        "donde estais", "como llegar", "ubicacion", "donde estas",
-        "formas de contacto", "hablar con alguien", "hablar con una persona",
-        "atencion telefonica", "whatsapp", "donde os encuentro"
+        "contacto",
+        "como os contacto",
+        "telefono de contacto",
+        "email de contacto",
+        "como contacto",
+        "telefono",
+        "email",
+        "correo electronico",
+        "como os llamo",
+        "numero de telefono",
+        "direccion",
+        "donde estais",
+        "como llegar",
+        "ubicacion",
+        "donde estas",
+        "formas de contacto",
+        "hablar con alguien",
+        "hablar con una persona",
+        "atencion telefonica",
+        "whatsapp",
+        "donde os encuentro"
       ],
       "responses": [
         "Puedes contactarnos por telefono en el 925 23 34 54, por email en almacen@olivillatres.com, o visitarnos en Calle Rio Valdecelada 7, Toledo.",
@@ -90,9 +164,15 @@
     {
       "tag": "ubicacion",
       "patterns": [
-        "donde estais", "direccion", "donde os encuentro", "como llegar",
-        "en que ciudad estais", "estais en toledo", "donde esta el almacen",
-        "ubicacion del almacen", "cerca de toledo"
+        "donde estais",
+        "direccion",
+        "donde os encuentro",
+        "como llegar",
+        "en que ciudad estais",
+        "estais en toledo",
+        "donde esta el almacen",
+        "ubicacion del almacen",
+        "cerca de toledo"
       ],
       "responses": [
         "Estamos en Calle Rio Valdecelada 7, 45007 Toledo. Puedes llamarnos al 925 23 34 54 para cualquier consulta.",
@@ -102,11 +182,21 @@
     {
       "tag": "devolucion",
       "patterns": [
-        "quiero devolver", "politica de devoluciones", "como devuelvo",
-        "puedo devolver", "cambio de producto", "no me gusta el producto",
-        "producto defectuoso", "llego roto", "devolucion de dinero",
-        "reembolso", "garantia", "plazo de devolucion", "no funciona",
-        "esta roto", "quiero cambiarlo"
+        "quiero devolver",
+        "politica de devoluciones",
+        "como devuelvo",
+        "puedo devolver",
+        "cambio de producto",
+        "no me gusta el producto",
+        "producto defectuoso",
+        "llego roto",
+        "devolucion de dinero",
+        "reembolso",
+        "garantia",
+        "plazo de devolucion",
+        "no funciona",
+        "esta roto",
+        "quiero cambiarlo"
       ],
       "responses": [
         "Para gestionar una devolucion o cambio, contactanos en el 925 23 34 54 o en almacen@olivillatres.com y te indicamos los pasos a seguir.",
@@ -116,10 +206,18 @@
     {
       "tag": "pago",
       "patterns": [
-        "como pago", "metodos de pago", "aceptais tarjeta",
-        "pago en efectivo", "bizum", "paypal", "transferencia",
-        "pago contra reembolso", "formas de pago",
-        "aceptais visa", "pago online", "se puede pagar a plazos"
+        "como pago",
+        "metodos de pago",
+        "aceptais tarjeta",
+        "pago en efectivo",
+        "bizum",
+        "paypal",
+        "transferencia",
+        "pago contra reembolso",
+        "formas de pago",
+        "aceptais visa",
+        "pago online",
+        "se puede pagar a plazos"
       ],
       "responses": [
         "Aceptamos tarjeta de credito y debito, transferencia bancaria y efectivo en tienda.",
@@ -129,15 +227,150 @@
     {
       "tag": "agradecimiento",
       "patterns": [
-        "gracias", "muchas gracias", "te lo agradezco", "muy amable",
-        "genial gracias", "perfecto gracias", "ok gracias", "thanks",
-        "de gran ayuda", "me has ayudado", "muy util"
+        "gracias",
+        "muchas gracias",
+        "te lo agradezco",
+        "muy amable",
+        "genial gracias",
+        "perfecto gracias",
+        "ok gracias",
+        "thanks",
+        "de gran ayuda",
+        "me has ayudado",
+        "muy util"
       ],
       "responses": [
         "De nada! Hay algo mas en lo que pueda ayudarte?",
         "Con mucho gusto! Estoy aqui para lo que necesites.",
         "Encantado de ayudar!"
       ]
-    }
+    },
+    {
+      "tag": "Como impermeabilizar una terraza?",
+      "patterns": [
+        "tengo goteras en la terraza",
+        "quiero reparar una terraza",
+        "me entra agua por la terraza"
+      ],
+      "responses": [
+        "¿Qué soporte tienes?",
+        "¿Lo quieres visto u oculto?"
+      ]
+    },
+    {
+      "tag": "Quiero uno oculto",
+      "patterns": [
+        "oculto",
+        "quiero un soporte oculto"
+      ],
+      "responses": [
+        "Si requieres una solución oculta tenemos sikalastic 612 que se aplica con brocha o rodillo. Contamos también con manta asfáltica pizarra que se debe soldar una con la otra hasta cubrir toda la terraza. Y, por último, contamos con lámina pvc de interperie que es soldado con calor."
+      ]
+    },
+    {
+      "tag": "Quiero uno visto",
+      "patterns": [
+        "visto",
+        "quiero un soporte visto"
+      ],
+      "responses": [
+        "Contamos con sikalastic 612 transitable tenemos en color gris, blanco y terracota. También tenemos la opción de Sika fill 370 fiber que se aplica con brocha o rodilla en color gris, blanco y teja.Y si requieres tapar los poros del suelo te recomendamos Sikagard 790 all in one protect "
+      ]
+    },
+    {
+      "tag": "Quiero reparar una piscina",
+      "patterns": [
+        "reparar piscina",
+        "reparación piscina",
+        "Tengo grietas en la piscina",
+        "grietas piscina",
+        "La piscina pierde agua",
+        "piscina pierde agua",
+        "La piscina tiene fugas",
+        "piscina fugas"
+      ],
+      "responses": [
+        "Se requiere un proceso de saneamiento completo y limpieza de la zona deterioada. Nosotros te recomendamos después de este proceso un mortero de reparación Sikatop 4012 y luego terminar con un Sika Monotop 107, Sika Top 107 ES Bicomponente, Sikalastic 1K en capa fina. Si solo tienes una pequeña fisura con la piscina llena de agua te podemos ofrecer el MS Polimero que sella incluso bajo el agua. Después proteger el mortero con puntura especial o gresite. "
+      ]
+    },
+    {
+      "tag": "Las tejas se me han despegado",
+      "patterns": [
+        "Se me han despegado las tejas"
+      ],
+      "responses": [
+        "Te recomendamos Poliespuma de Tejas P501 de la marca Bostik, ya sea manual o canula y el de Pistola."
+      ]
+    },
+    {
+      "tag": "Me entra agua por las tejas",
+      "patterns": [
+        "Entra agua por las tejas",
+        "Se filtra agua por las tejas de mi casa"
+      ],
+      "responses": [
+        "Teneis que revisar si la teja esta rajada o despegada. Si esta rajada te recomendamos el uso de la banda butílica, la pintura de caucho (sikafill 370 Fiber) con una malla velo de 100 gr."
+      ]
+    },
+    {
+      "tag": "Se me ha rajado la tejas",
+      "patterns": [
+        "Las tejas se me han rajado",
+        "raja teja",
+        "raja en teja"
+      ],
+      "responses": [
+        "Si esta rajada te recomendamos el uso de la banda butílica, la pintura de caucho (sikafill 370 Fiber) con una malla velo de 100 g."
+      ]
+    },
+    {
+      "tag": "Tengo agujeros en la auralita",
+      "patterns": [
+        "agujeros auralita"
+      ],
+      "responses": [
+        "Utiliza la banda butílica adhesiva."
+      ]
+    },
+    {
+      "tag": "Quiero aislar una habitación por el ruido",
+      "patterns": [
+        "Hay mucho ruido en la habitación y quiero aislarla"
+      ],
+      "responses": [
+        "Puedes usar lana mineral para aislar acústicamente y térmicamente cualquier tipo de habitación. Si el ruido es muy alto entonces te recomendamos Soprapren de 4cm."
+      ]
+    },
+    {
+      "tag": "Quiero aislar una habitación del frío y del calor",
+      "patterns": [
+        "Quiero aislar una habitación térmicamente",
+        "Quiero un aislamiento térmico para cámaras"
+      ],
+      "responses": [
+        "Ursa Terra Base y también puedes hacerlo con XPS."
+      ]
+    },
+    {
+      "tag": "Se me rompió una claraboya",
+      "patterns": [
+        "Necesito una claraboya para el ático",
+        "Necesito una cúpula de claraboya",
+        "claraboya"
+      ],
+      "responses": [
+        "Necesitamos la medida exacta de la claraboya de esquina a esquina y es sobre pedido dependiendo del tamaño. Y si es un zócalo requerimos el tamaño del hueco del forjado."
+      ]
+    },
+    {
+      "tag": "tenies placa de yeso",
+      "patterns": [
+        "La placa de yeso me sirve para hacer tabiques",
+        "Puedo hacer techo con una placa de yeso"
+      ],
+      "responses": [
+        "Contamos con placas de yeso de diferentes grosores y medida y usos, se puede utilizar para lugares donde no hay humedad ni fuego, y hay otras que se usan en sitios húmedos, como baños, y otros y que son resistentes al fuego.  También contamos con la perfilería y los tornillos para su colocación. Contamos con pasta de agarre o espuma para pegar las placas a la superficie requerida."
+      ]
+    },
   ]
 }

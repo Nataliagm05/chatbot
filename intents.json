@@ -6,6 +6,7 @@
         "hola",
         "buenos dias",
         "buenas tardes",
+        "buenas tardes a todos",
         "buenas noches",
         "hey",
         "que tal",
@@ -15,7 +16,17 @@
         "hello",
         "buen dia",
         "como estas",
-        "ey hola"
+        "ey hola",
+        "muy buenas",
+        "muy buenos dias",
+        "muy buenas tardes",
+        "hola que tal",
+        "buenas que tal",
+        "hola a todos",
+        "buenas a todos",
+        "hey que tal",
+        "hola buenas tardes",
+        "hola buenos dias"
       ],
       "responses": [
         "Hola! En que puedo ayudarte hoy?",

@@ -326,7 +326,8 @@
     {
       "tag": "Se me ha rajado la tejas",
       "patterns": [
-        "Las tejas se me han rajado","Se me ha rajado la teja",
+        "Las tejas se me han rajado",
+        "Se me ha rajado la teja",
         "raja teja",
         "raja en teja"
       ],
@@ -538,10 +539,33 @@
       "tag": "mortero_general",
       "patterns": [
         "teneis mortero",
-        "mortero gris",
-        "mortero blanco",
-        "mortero saco",
-        "mortero de uso normal"
+        "marcas de mortero",
+        "cual mortero teneis"
+      ],
+      "responses": [
+        "Contamos con mortero de Puma y de Sika indicame el tipo que requieres."
+      ]
+    },
+    {
+      "tag": "mortero_general",
+      "patterns": [
+        "mortero sika",
+        "quiero mortero sika",
+        "que morteros de sika teneis",
+        "mortero reparacion sika",
+        "mortero rapido sika",
+        "mortero impermeabilizacion sika"
+      ],
+      "responses": [
+        "Contamos con morteros Sika de reparación, mortero rápido y mortero de impermeabilización. Llámanos al 925 23 34 54 para más detalles."
+      ]
+    },
+    {
+      "tag": "mortero_general",
+      "patterns": [
+        "mortero puma",
+        "quiero mortero puma",
+        "que morteros de puma teneis"
       ],
       "responses": [
         "Contamos con mortero en color gris y blanco en saco de 25 kg de uso normal. También tenemos morteros de reparación, mortero rápido y mortero impermeabilizante de la marca Puma."
@@ -571,18 +595,6 @@
       ],
       "responses": [
         "Contamos con Lanko Flexible en saco de 25 kg para todo tipo de superficies, y Lanko Especial Plus en saco de 25 kg especial para placa de yeso y zonas húmedas."
-      ]
-    },
-    {
-      "tag": "mortero_sika",
-      "patterns": [
-        "teneis mortero de sika",
-        "mortero reparacion sika",
-        "mortero rapido sika",
-        "mortero impermeabilizacion sika"
-      ],
-      "responses": [
-        "Contamos con morteros Sika de reparación, mortero rápido y mortero de impermeabilización. Llámanos al 925 23 34 54 para más detalles."
       ]
     },
     {

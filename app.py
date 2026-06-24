@@ -1,8 +1,8 @@
 """
 app.py
 ======
-Servidor Flask definitivo optimizado para PythonAnywhere.
-Flujo híbrido con guardado automático de preguntas sin responder.
+Servidor Flask optimizado para Render / PythonAnywhere gratuitos.
+TF-IDF + SVM ligero. Sin sentence-transformers.
 """
 
 import pickle
@@ -15,30 +15,24 @@ import sys
 BASE = Path(__file__).parent
 sys.path.insert(0, str(BASE))
 
-import train
-print(">>> TRAIN DESDE:", train.__file__)
-print(">>> TIENE vectorizar:", hasattr(train, 'vectorizar'))
-
 from train import normalizar, predecir
-from retriever import Retriever          
+from retriever import Retriever
 
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 
-
-
-# ── Cargar datos ─────────────────────────────────────────────────────────────
+# ── Cargar datos ──────────────────────────────────────────────────────────────
 
 MODELO_PATH  = BASE / 'chatbot_model.pkl'
 INTENTS_PATH = BASE / 'intents.json'
-KB_PATH      = BASE / 'knowledge_base.json'    
+KB_PATH      = BASE / 'knowledge_base.json'
 
 with open(INTENTS_PATH, 'r', encoding='utf-8') as f:
     intents_data = json.load(f)
 
-# Entrenar / recargar modelo SVM al arrancar
+# Entrenar / recargar modelo al arrancar
 from train import entrenar
 entrenar(
     ruta_datos=str(INTENTS_PATH),
@@ -48,11 +42,10 @@ entrenar(
 with open(MODELO_PATH, 'rb') as f:
     modelo_data = pickle.load(f)
 
-svm        = modelo_data['svm']
+pipeline   = modelo_data['pipeline']
 respuestas = modelo_data['respuestas']
 
-# Inicializar Retriever RAG
-retriever = Retriever(str(KB_PATH))            
+retriever = Retriever(str(KB_PATH))
 
 
 # ── Lógica de respuesta ───────────────────────────────────────────────────────
@@ -60,7 +53,7 @@ retriever = Retriever(str(KB_PATH))
 def obtener_respuesta(texto: str):
     texto_norm = normalizar(texto)
 
-    # ── Nivel 1: coincidencia exacta ─────────────────────────────────────────
+    # Nivel 1: coincidencia exacta con patrones
     for intent in intents_data["intents"]:
         patrones = [normalizar(p) for p in intent["patterns"]]
         if texto_norm in patrones:
@@ -71,8 +64,8 @@ def obtener_respuesta(texto: str):
                 "respuesta": random.choice(intent["responses"])
             }
 
-    # ── Nivel 2: clasificador SVM ─────────────────────────────────────────────
-    intent, confianza = predecir(svm, texto)
+    # Nivel 2: clasificador TF-IDF + SVM
+    intent, confianza = predecir(pipeline, texto)
 
     if intent != 'desconocido' and intent in respuestas:
         return {
@@ -82,8 +75,8 @@ def obtener_respuesta(texto: str):
             'respuesta': random.choice(respuestas[intent])
         }
 
-    # ── Nivel 3: RAG por similitud coseno o coincidencia conceptual ──────────
-    resultados = retriever.buscar(texto, umbral=0.20)
+    # Nivel 3: RAG TF-IDF sobre knowledge_base
+    resultados = retriever.buscar(texto, umbral=0.10)
 
     if resultados:
         mejor = resultados[0]
@@ -94,14 +87,14 @@ def obtener_respuesta(texto: str):
             'respuesta': retriever.formatear_respuesta(mejor)
         }
 
-    # ── Nivel 4: fallback (Aprendizaje pasivo automático) ─────────────────────
+    # Nivel 4: fallback + guardar pregunta sin respuesta
     try:
         UNANSWERED_PATH = BASE / 'unanswered.json'
         preguntas_vistas = []
         if UNANSWERED_PATH.exists():
             with open(UNANSWERED_PATH, 'r', encoding='utf-8') as f:
                 preguntas_vistas = json.load(f)
-        
+
         if texto not in preguntas_vistas and len(texto.strip()) > 3:
             preguntas_vistas.append(texto)
             with open(UNANSWERED_PATH, 'w', encoding='utf-8') as f:
@@ -121,26 +114,24 @@ def obtener_respuesta(texto: str):
     }
 
 
-# ── Rutas de Flask ───────────────────────────────────────────────────────────
+# ── Rutas Flask ───────────────────────────────────────────────────────────────
 
 @app.route('/')
 def home():
-    """Sirve la interfaz del chat."""
     return render_template_string(HTML)
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    """Recibe los mensajes de la web."""
     data = request.get_json() or {}
     mensaje_usuario = data.get('mensaje', '')
     if not mensaje_usuario:
         return jsonify({'respuesta': 'No he recibido ningún texto.'}), 400
-    
+
     respuesta_bot = obtener_respuesta(mensaje_usuario)
     return jsonify(respuesta_bot)
 
 
-# ── HTML inline completo ───────────────────────────────────────────────────────
+# ── HTML inline ───────────────────────────────────────────────────────────────
 
 HTML = """<!DOCTYPE html>
 <html lang="es">
@@ -213,12 +204,7 @@ HTML = """<!DOCTYPE html>
     const contenedor = document.getElementById('messages');
     const msgDiv = document.createElement('div');
     msgDiv.classList.add('msg', remitente);
-    
-    let metaHTML = '';
-    if (nivel) {
-      metaHTML = `<span class="meta">Origen: ${nivel}</span>`;
-    }
-
+    const metaHTML = nivel ? `<span class="meta">Origen: ${nivel}</span>` : '';
     msgDiv.innerHTML = `<div><div class="bubble">${texto}</div>${metaHTML}</div>`;
     contenedor.appendChild(msgDiv);
     contenedor.scrollTop = contenedor.scrollHeight;
@@ -233,10 +219,8 @@ HTML = """<!DOCTYPE html>
     const input = document.getElementById('user-input');
     const texto = input.value.trim();
     if (!texto) return;
-    
     input.value = '';
     agregarMensaje(texto, 'user');
-
     try {
       const res = await fetch('/chat', {
         method: 'POST',

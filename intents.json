@@ -326,7 +326,7 @@
     {
       "tag": "Se me ha rajado la tejas",
       "patterns": [
-        "Las tejas se me han rajado",
+        "Las tejas se me han rajado","Se me ha rajado la teja",
         "raja teja",
         "raja en teja"
       ],

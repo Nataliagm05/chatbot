@@ -24,12 +24,8 @@ from retriever import Retriever
 
 from flask_cors import CORS
 app = Flask(__name__)
-# Permite que cualquier página web externa se conecte a este servidor Flask
-CORS(app, resources={r"/*": {
-    "origins": "*",
-    "methods": ["POST", "GET", "OPTIONS"],
-    "allow_headers": ["Content-Type"]
-}})
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 
 

@@ -1,0 +1,412 @@
+{
+  "documentos": [
+    {
+      "id": "sika_001",
+      "titulo": "SikaLastic 612",
+      "contenido": "Membrana impermeabilizante de poliuretano monocomponente activada por humedad. Cura formando una solución continua sin juntas. Apta para cubiertas expuestas, balcones y bajo baldosa. Colores disponibles: blanco, gris, terracota. Aplicacion con brocha o rodillo.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "terrazas cubiertas balcones impermeabilizacion"
+    },
+    {
+      "id": "sika_002",
+      "titulo": "SikaLastic 1K ES",
+      "contenido": "Mortero monocomponente reforzado con fibras que puentea fisuras para impermeabilización. Apto para aplicación con brocha o llana. Base de cemento modificado con polímeros resistentes a los álcalis. Color blanco.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "impermeabilizacion fisuras piscinas depositos"
+    },
+    {
+      "id": "sika_003",
+      "titulo": "SikaFill 370 Fibers",
+      "contenido": "Revestimiento elástico con fibras para impermeabilización in situ. Tecnología Duralastic. Base de copolímeros estireno-acrílicos en emulsión acuosa con fibras de vidrio. Forma una película flexible, impermeable y duradera. Colores: blanco, gris, rojo, teja. Uso en tejados y cubiertas.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "tejado tejas cubierta impermeabilizacion pintura caucho"
+    },
+    {
+      "id": "sika_004",
+      "titulo": "SikaFill 420 Extreme",
+      "contenido": "Membrana líquida impermeabilizante en base agua, altamente elástica y resistente a los rayos UV. Tecnología Duralastic. Monocomponente, libre de disolventes, de aplicación en frío. Colores: blanco, gris, rojo, teja.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "cubierta terraza impermeabilizacion UV exterior"
+    },
+    {
+      "id": "sika_005",
+      "titulo": "SikaTop 107 Plus ES",
+      "contenido": "Mortero de impermeabilización bicomponente a base de cemento portland con material reciclado. Para impermeabilización y protección de estructuras de hormigón y mampostería. Uso en piscinas, sótanos, depósitos.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "piscina sotano deposito impermeabilizacion mortero"
+    },
+    {
+      "id": "sika_006",
+      "titulo": "Sika MonoTop 107 Plus ES",
+      "contenido": "Mortero impermeabilizante monocomponente de altas prestaciones con material reciclado. Color blanco. Para impermeabilización de piscinas, terrazas y estructuras.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "piscina impermeabilizacion mortero monocomponente"
+    },
+    {
+      "id": "sika_007",
+      "titulo": "Sika MonoTop 4012 ES",
+      "contenido": "Mortero de reparación monocomponente reforzado con fibras, baja retracción y materiales reciclados. Color gris. Para reparación de hormigón deteriorado, piscinas y estructuras.",
+      "marca": "Sika",
+      "categoria": "reparacion",
+      "usos": "reparacion piscina hormigon fisura grieta mortero"
+    },
+    {
+      "id": "sika_008",
+      "titulo": "SikaGard 790 All-in-One-Protect",
+      "contenido": "Protección altamente eficaz e invisible sobre piedras naturales y superficies minerales. Repele manchas de aceite, gasolina y agua. Previene daños por erosión, facilita la retirada de grafitis y es permeable al vapor. Para suelos, terrazas y fachadas de piedra.",
+      "marca": "Sika",
+      "categoria": "proteccion",
+      "usos": "suelo terraza piedra proteccion poros manchas"
+    },
+    {
+      "id": "sika_009",
+      "titulo": "SikaMur InjectoCream 100",
+      "contenido": "Sustancia repelente al agua que forma una barrera contra la humedad ascendente por capilaridad. Color blanco. Se inyecta en muros para eliminar la humedad del suelo que sube por las paredes.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "humedad ascendente capilaridad muro pared inyeccion"
+    },
+    {
+      "id": "sika_010",
+      "titulo": "Sikaflex 11 FC",
+      "contenido": "Adhesivo y sellador elástico monocomponente de curado por humedad para sellados y pegados multiusos. Colores: blanco, gris, marrón, negro, beige, antracita. Para juntas de fachada, ventanas, marcos.",
+      "marca": "Sika",
+      "categoria": "selladores",
+      "usos": "sellador junta fachada ventana pegado adhesivo"
+    },
+    {
+      "id": "sika_011",
+      "titulo": "SikaBond T8",
+      "contenido": "Adhesivo elástico e impermeable monocomponente para pegado de baldosas. Color ocre. Bote de 10 litros. Para colocación de baldosas en terrazas y zonas húmedas.",
+      "marca": "Sika",
+      "categoria": "adhesivos",
+      "usos": "baldosa adhesivo terraza humedad pegado"
+    },
+    {
+      "id": "sika_012",
+      "titulo": "Sika Reemat Premium",
+      "contenido": "Tejido de fibra de vidrio para refuerzo en sistemas de membranas de aplicación líquida. Color blanco. Se usa como malla de refuerzo junto con impermeabilizantes líquidos en tejados y cubiertas.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "malla fibra vidrio refuerzo velo impermeabilizante tejado"
+    },
+    {
+      "id": "sika_013",
+      "titulo": "SikaDur 31+",
+      "contenido": "Adhesivo estructural bicomponente epoxi, tolerante a la humedad, con alta resistencia mecánica. Color gris. Lote 1,2 kg. Para reparaciones estructurales y sellado de grietas.",
+      "marca": "Sika",
+      "categoria": "adhesivos",
+      "usos": "adhesivo epoxi estructural grieta reparacion"
+    },
+    {
+      "id": "sika_014",
+      "titulo": "Sika 1",
+      "contenido": "Impermeabilizante líquido para mortero y hormigón, exento de cloruros. Color amarillo. Disponible en garrafa de 5 kg y 25 kg. Se añade al agua de amasado para impermeabilizar morteros.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "aditivo mortero hormigon impermeabilizante liquido"
+    },
+    {
+      "id": "sika_015",
+      "titulo": "SikaTop 10",
+      "contenido": "Resina sintética de copolímeros acrílicos como imprimación tapaporos y promotor de adherencia. Para soportes minerales, revestimientos cementosos y cerámicos antiguos. Colores rojo. Bote 5 kg y 25 kg.",
+      "marca": "Sika",
+      "categoria": "imprimacion",
+      "usos": "imprimacion adherencia tapaporos previo mortero"
+    },
+    {
+      "id": "sika_016",
+      "titulo": "SikaTop 30",
+      "contenido": "Resina acrílica en base agua para mejorar la adherencia previa a todo tipo de morteros cementosos. Color azulado. Garrafa 5 kg.",
+      "marca": "Sika",
+      "categoria": "imprimacion",
+      "usos": "imprimacion adherencia mortero cemento previo"
+    },
+    {
+      "id": "sika_017",
+      "titulo": "Sika MonoTop 160 Migrating",
+      "contenido": "Mortero cementoso impermeabilizante con agentes activos que migran al interior del hormigón. Los componentes generan una estructura cristalina insoluble en la red de poros. Aplicable con brocha o por proyección. Para impermeabilización de estructuras enterradas y sótanos.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "sotano enterrado cristalizacion impermeabilizacion hormigon"
+    },
+    {
+      "id": "sika_018",
+      "titulo": "SikaCim Impermeabilizante",
+      "contenido": "Aditivo líquido libre de cloruros para morteros y hormigones impermeables. Color amarillo. Garrafa 5 kg y 25 kg. Se mezcla con el mortero para dar propiedades impermeabilizantes.",
+      "marca": "Sika",
+      "categoria": "impermeabilizacion",
+      "usos": "aditivo impermeabilizante mortero hormigon liquido"
+    },
+    {
+      "id": "sika_019",
+      "titulo": "Sika-4 Mortero Rápido",
+      "contenido": "Mortero monocomponente de fraguado rápido, a base de cemento y exento de cloruros. Color gris. Bolsa de 10 kg. Para reparaciones urgentes, sellado de filtraciones activas.",
+      "marca": "Sika",
+      "categoria": "reparacion",
+      "usos": "mortero rapido fraguado sellado filtracion agua urgente"
+    },
+    {
+      "id": "sika_020",
+      "titulo": "SikaGuard 711 ES",
+      "contenido": "Impregnante hidrófugo con autoprotección base silano-siloxano contra la humedad. Color incoloro. Para protección de fachadas, piedra natural y hormigón contra la humedad.",
+      "marca": "Sika",
+      "categoria": "proteccion",
+      "usos": "hidrofugo fachada piedra proteccion humedad siloxano"
+    },
+    {
+      "id": "bostik_001",
+      "titulo": "P501 Poliespuma Tejas Bostik",
+      "contenido": "Poliespuma de poliuretano especial para el pegado de tejas en cubierta. Alta resistencia y agarre inmediato. Disponible en formato pistola y cánula. Para fijar tejas que se han despegado.",
+      "marca": "Bostik",
+      "categoria": "poliespumas",
+      "usos": "tejas despegadas cubierta pegado poliespuma fijacion"
+    },
+    {
+      "id": "bostik_002",
+      "titulo": "P301 Poliespuma Multiusos Bostik",
+      "contenido": "Poliespuma de poliuretano para fijación, relleno, sellado y aislamiento en construcción. Disponible en formato pistola y manual. Uso general en carpintería, marcos, huecos.",
+      "marca": "Bostik",
+      "categoria": "poliespumas",
+      "usos": "poliespuma relleno sellado aislamiento fijacion huecos marcos"
+    },
+    {
+      "id": "bostik_003",
+      "titulo": "P605 Poliespuma Ultraflexible Bostik",
+      "contenido": "Espuma de poliuretano de máxima flexibilidad, ideal para juntas con movimiento y sellado de huecos. Formato pistola.",
+      "marca": "Bostik",
+      "categoria": "poliespumas",
+      "usos": "espuma flexible junta movimiento hueco sellado"
+    },
+    {
+      "id": "bostik_004",
+      "titulo": "P925 Poliespuma Fijación Turbo Bostik",
+      "contenido": "Adhesivo de espuma de poliuretano de fijación rápida. Ideal para sujeción de molduras, zócalos y paneles. Formato pistola.",
+      "marca": "Bostik",
+      "categoria": "poliespumas",
+      "usos": "fijacion rapida molduras zocalos paneles adhesivo espuma"
+    },
+    {
+      "id": "bostik_005",
+      "titulo": "WaterStop Espray Reparador Bostik",
+      "contenido": "Solución impermeabilizante de reparación en espray. Sella instantáneamente goteras y fisuras en cubiertas y canalones. Formato spray.",
+      "marca": "Bostik",
+      "categoria": "impermeabilizacion",
+      "usos": "gotera fisura cubierta canalon sellado rapido spray impermeabilizante"
+    },
+    {
+      "id": "bostik_006",
+      "titulo": "MSP Turbo Bostik",
+      "contenido": "Adhesivo de montaje y sellador MSP de alto agarre inmediato. Apto para superficies húmedas y multimaterial. Para montaje y sellado en construcción.",
+      "marca": "Bostik",
+      "categoria": "adhesivos_msp",
+      "usos": "adhesivo montaje sellador agarre humedad multimaterial"
+    },
+    {
+      "id": "bostik_007",
+      "titulo": "MSP H750 Premium Bostik",
+      "contenido": "Adhesivo sellador de alta calidad que no mancha los materiales. Flexible y resistente a la intemperie. Colores: marrón, gris, blanco.",
+      "marca": "Bostik",
+      "categoria": "adhesivos_msp",
+      "usos": "adhesivo sellador intemperie flexible exterior"
+    },
+    {
+      "id": "bostik_008",
+      "titulo": "A310 Acril Grietas Bostik",
+      "contenido": "Sellador acrílico pintable especial construcción. Para grietas y juntas en yeso, mortero y madera. Pintable en 30 minutos.",
+      "marca": "Bostik",
+      "categoria": "selladores",
+      "usos": "grieta junta yeso mortero madera sellador pintable"
+    },
+    {
+      "id": "bostik_009",
+      "titulo": "Taco Químico Bostik",
+      "contenido": "Anclaje químico de resina bicomponente para fijaciones de cargas medias y altas. Ideal para barandillas, estructuras de acero y persianas.",
+      "marca": "Bostik",
+      "categoria": "anclajes",
+      "usos": "anclaje quimico fijacion barandilla estructura tornillo"
+    },
+    {
+      "id": "ursa_001",
+      "titulo": "URSA Terra Base",
+      "contenido": "Panel semirígido de lana mineral sin revestimiento. Suministrado en panel y panel enrollado. Espesores de 50 mm y 60 mm. Para aislamiento térmico y acústico de cámaras, cubiertas y forjados.",
+      "marca": "Ursa",
+      "categoria": "aislamiento",
+      "usos": "lana mineral aislamiento termico acustico camara cubierta forjado"
+    },
+    {
+      "id": "ursa_002",
+      "titulo": "URSA Terra Mur P1051",
+      "contenido": "Panel semirrígido de lana mineral recubierto con papel kraft que actúa como barrera de vapor. Espesor 60 mm. Para aislamiento de muros y paredes con barrera de vapor integrada.",
+      "marca": "Ursa",
+      "categoria": "aislamiento",
+      "usos": "lana mineral muro pared barrera vapor aislamiento"
+    },
+    {
+      "id": "ursa_003",
+      "titulo": "URSA Terra Mur Plus P1203",
+      "contenido": "Panel de lana mineral recubierto con papel kraft impreso como barrera de vapor. Espesor 100 mm. Disponible en panel de 1.35 m o en rollo.",
+      "marca": "Ursa",
+      "categoria": "aislamiento",
+      "usos": "lana mineral aislamiento barrera vapor 100mm"
+    },
+    {
+      "id": "ursa_004",
+      "titulo": "URSA Terra Manta Papel MRK 40",
+      "contenido": "Manta de lana mineral recubierta con papel kraft como barrera de vapor. Espesores 80 mm y 100 mm. Ancho 1.2 m. Suministrada en rollo. Ideal para cubiertas y forjados.",
+      "marca": "Ursa",
+      "categoria": "aislamiento",
+      "usos": "manta lana mineral cubierta forjado rollo aislamiento"
+    },
+    {
+      "id": "ursa_005",
+      "titulo": "URSA Air Panel ALU-ALU P5858",
+      "contenido": "Panel rígido con Tecnología InCare para construcción de conductos de climatización. Complejo kraft-aluminio reforzado exterior e interior. Espesor 25 mm. Para fabricación de conductos de aire acondicionado y ventilación.",
+      "marca": "Ursa",
+      "categoria": "climatizacion",
+      "usos": "conducto climatizacion aire acondicionado ventilacion panel rigido"
+    },
+    {
+      "id": "ursa_006",
+      "titulo": "URSA Air Panel Zero A2",
+      "contenido": "Panel rígido con Tecnología InCare. Tejido de aluminio al exterior y tejido absorbente acústico negro interior. Reacción al fuego A2. Para conductos de climatización con requisitos de reacción al fuego.",
+      "marca": "Ursa",
+      "categoria": "climatizacion",
+      "usos": "conducto climatizacion fuego A2 acustico ventilacion"
+    },
+    {
+      "id": "soprema_001",
+      "titulo": "Morterplas SBS Soprema",
+      "contenido": "Lámina bituminosa modificada con elastómero SBS para impermeabilización de cubiertas planas y terrazas. Acabado film, FV Mineral y FPV Mineral. Se suelda con soplete.",
+      "marca": "Soprema",
+      "categoria": "impermeabilizacion",
+      "usos": "lamina bituminosa cubierta terraza impermeabilizacion soldada soplete"
+    },
+    {
+      "id": "soprema_002",
+      "titulo": "Morterplas APP Soprema",
+      "contenido": "Lámina bituminosa polimérica APP para impermeabilización. Diferentes modelos: APP, APP FV Mineral, Pizarragres Mineral. Para cubiertas y terrazas.",
+      "marca": "Soprema",
+      "categoria": "impermeabilizacion",
+      "usos": "lamina bituminosa APP cubierta terraza impermeabilizacion pizarra"
+    },
+    {
+      "id": "soprema_003",
+      "titulo": "Flagon PVC Soprema",
+      "contenido": "Membrana sintética de PVC para impermeabilización de cubiertas planas, terrazas y estanques. Diversos modelos según uso: SR, SR Energy Plus, SV, S, PVC NI, SA. Se suelda con calor.",
+      "marca": "Soprema",
+      "categoria": "impermeabilizacion",
+      "usos": "membrana PVC cubierta terraza estanque impermeabilizacion lamina sintetica soldada calor"
+    },
+    {
+      "id": "soprema_004",
+      "titulo": "SopraXPS Soprema",
+      "contenido": "Paneles de poliestireno extruido XPS de alta resistencia a la compresión y a la humedad. Para cubiertas invertidas, suelos y fachadas. Modelos SL, TR, PM.",
+      "marca": "Soprema",
+      "categoria": "aislamiento",
+      "usos": "XPS poliestireno extruido aislamiento cubierta invertida suelo fachada"
+    },
+    {
+      "id": "soprema_005",
+      "titulo": "SopraEPS SATE Soprema",
+      "contenido": "Paneles de poliestireno expandido EPS especialmente formulados para sistemas de aislamiento térmico exterior SATE ETICS. Para aislar fachadas por el exterior.",
+      "marca": "Soprema",
+      "categoria": "aislamiento",
+      "usos": "EPS poliestireno expandido SATE fachada aislamiento exterior"
+    },
+    {
+      "id": "soprema_006",
+      "titulo": "Soprapen Soprema",
+      "contenido": "Paneles de aglomerado de poliuretano reciclado para aislamiento acústico a ruido de impacto y aéreo en suelos y paredes. Para reducir el ruido entre plantas y habitaciones.",
+      "marca": "Soprema",
+      "categoria": "aislamiento_acustico",
+      "usos": "aislamiento acustico ruido impacto suelo pared habitacion"
+    },
+    {
+      "id": "soprema_007",
+      "titulo": "Drentex Soprema",
+      "contenido": "Láminas drenantes de polietileno de alta densidad para drenaje de cubiertas, terrazas y jardines. Multitud de modelos: Protect 400, Protect Plus, Protect Maxi, Protect Maxi Garden, Protect Eco Garden Plus, Impact.",
+      "marca": "Soprema",
+      "categoria": "drenaje",
+      "usos": "drenaje cubierta terraza jardin lamina drenante polietileno"
+    },
+    {
+      "id": "soprema_008",
+      "titulo": "Geotextiles Soprema",
+      "contenido": "Geotextiles no tejidos de poliéster y polipropileno para separación, filtración y protección en obra civil y cubiertas ajardinadas. Modelos: Rooftex V, Texxam, Geoland HT.",
+      "marca": "Soprema",
+      "categoria": "geotextiles",
+      "usos": "geotextil separacion filtracion cubierta ajardinada obra civil"
+    },
+    {
+      "id": "puma_001",
+      "titulo": "Pegoland Profesional Flex C2 TE S1 Grupo Puma",
+      "contenido": "Adhesivo cementoso de ligantes mixtos con flexibilidad y alta adherencia. Baja emisión de polvo. Para colocación de pavimentos y revestimientos cerámicos interiores y exteriores. Especialmente recomendado para fachadas y calefacción radiante. Color blanco. Saco 25 kg.",
+      "marca": "Grupo Puma",
+      "categoria": "adhesivos_ceramica",
+      "usos": "adhesivo baldosa ceramica pavimento fachada flexible cola"
+    },
+    {
+      "id": "puma_002",
+      "titulo": "Pumaflex PU Hybrid Grupo Puma",
+      "contenido": "Membrana impermeabilizante de poliuretano para cubiertas y terrazas. Referencia 587. Formato 4 litros.",
+      "marca": "Grupo Puma",
+      "categoria": "impermeabilizacion",
+      "usos": "membrana impermeabilizante poliuretano cubierta terraza"
+    },
+    {
+      "id": "puma_003",
+      "titulo": "Morcem Dry Fix Grupo Puma",
+      "contenido": "Mortero impermeabilizante para terrazas. Referencia 501. Formato 20 kg. Color gris.",
+      "marca": "Grupo Puma",
+      "categoria": "impermeabilizacion",
+      "usos": "mortero impermeabilizante terraza"
+    },
+    {
+      "id": "puma_004",
+      "titulo": "Morcem Dry SF Grupo Puma",
+      "contenido": "Mortero impermeable para muros expuestos a la humedad. Referencia 850. Formato 25 kg.",
+      "marca": "Grupo Puma",
+      "categoria": "impermeabilizacion",
+      "usos": "mortero impermeable muro humedad pared"
+    },
+    {
+      "id": "puma_005",
+      "titulo": "Morcem Elastic PM Grupo Puma",
+      "contenido": "Membrana de poliuretano monocomponente que produce una membrana aromática continua, elástica y completamente adherida al soporte. Estanca y 100% impermeable. Para obra nueva o rehabilitación. 6 kg.",
+      "marca": "Grupo Puma",
+      "categoria": "impermeabilizacion",
+      "usos": "membrana elastica impermeable cubierta rehabilitacion"
+    },
+    {
+      "id": "puma_006",
+      "titulo": "Morcemrest Repair Grupo Puma",
+      "contenido": "Mortero de reparación para grandes espesores. Referencia 729. Para reparación de hormigón muy deteriorado.",
+      "marca": "Grupo Puma",
+      "categoria": "reparacion",
+      "usos": "mortero reparacion hormigon deteriorado grandes espesores"
+    },
+    {
+      "id": "puma_007",
+      "titulo": "Morcem Rápido R1 Grupo Puma",
+      "contenido": "Mortero rápido para albañilería. Referencia 498. Formato 20 kg.",
+      "marca": "Grupo Puma",
+      "categoria": "reparacion",
+      "usos": "mortero rapido albanileria fraguado reparacion"
+    },
+    {
+      "id": "puma_008",
+      "titulo": "Morcemsec Multiusos Grupo Puma",
+      "contenido": "Mortero seco para enlucidos y obras de mampostería en general. Colores blanco y gris. Formato 25 kg.",
+      "marca": "Grupo Puma",
+      "categoria": "morteros",
+      "usos": "mortero enlucido mamposteria revestimiento"
+    }
+  ]
+}

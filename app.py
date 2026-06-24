@@ -1,7 +1,13 @@
 """
-chatbot/app/app.py
-==================
+app.py
+======
 Servidor Flask con interfaz web para el chatbot.
+
+Flujo híbrido:
+  1. Coincidencia exacta en intents.json         → respuesta hardcodeada
+  2. SVM con confianza >= 0.35                   → respuesta del intent
+  3. RAG: similitud coseno sobre knowledge_base  → respuesta del producto
+  4. Sin resultado                               → mensaje de fallback
 """
 
 import pickle
@@ -10,26 +16,30 @@ import json
 from pathlib import Path
 from flask import Flask, request, jsonify, render_template_string
 import sys
-sys.path.insert(0, str(Path(__file__).parent))
+
+BASE = Path(__file__).parent
+sys.path.insert(0, str(BASE))
+
 from train import normalizar, predecir
+from retriever import Retriever          # ← NUEVO
 
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Cargar modelo al iniciar
-BASE = Path(__file__).parent
-MODELO_PATH = BASE / 'chatbot_model.pkl'
+# ── Cargar datos ─────────────────────────────────────────────────────────────
 
+MODELO_PATH  = BASE / 'chatbot_model.pkl'
 INTENTS_PATH = BASE / 'intents.json'
+KB_PATH      = BASE / 'knowledge_base.json'    # ← NUEVO
 
 with open(INTENTS_PATH, 'r', encoding='utf-8') as f:
     intents_data = json.load(f)
 
+# Entrenar / recargar modelo SVM
 from train import entrenar
-
 entrenar(
-    ruta_datos=str(BASE / 'intents.json'),
+    ruta_datos=str(INTENTS_PATH),
     ruta_modelo=str(MODELO_PATH)
 )
 
@@ -39,40 +49,81 @@ with open(MODELO_PATH, 'rb') as f:
 pipeline   = modelo_data['pipeline']
 respuestas = modelo_data['respuestas']
 
+# Inicializar Retriever RAG
+retriever = Retriever(str(KB_PATH))            # ← NUEVO
+
+
+# ── Lógica de respuesta ───────────────────────────────────────────────────────
 
 def obtener_respuesta(texto: str):
+    """
+    Pipeline híbrido de tres niveles:
+
+    Nivel 1 — Exacto:
+      Si el texto normalizado coincide con algún patrón del JSON → respuesta directa.
+
+    Nivel 2 — SVM:
+      Si la confianza del clasificador supera el umbral 0.35 → respuesta del intent.
+
+    Nivel 3 — RAG (similitud coseno):
+      Si la similitud coseno con algún documento de la KB supera 0.15 → respuesta del producto.
+      La similitud coseno se calcula como:
+          sim(q, di) = vq · vi    (vectores TF-IDF unitarios, norma l2)
+
+    Nivel 4 — Fallback:
+      "No lo sé, llámanos."
+    """
 
     texto_norm = normalizar(texto)
 
-    # Buscar coincidencia exacta primero
+    # ── Nivel 1: coincidencia exacta ─────────────────────────────────────────
     for intent in intents_data["intents"]:
         patrones = [normalizar(p) for p in intent["patterns"]]
-
         if texto_norm in patrones:
             return {
-                "intent": intent["tag"],
+                "intent":    intent["tag"],
+                "nivel":     "exacto",
                 "confianza": 1.0,
                 "respuesta": random.choice(intent["responses"])
             }
 
-    # Si no hay coincidencia exacta, usar IA
+    # ── Nivel 2: clasificador SVM ─────────────────────────────────────────────
     intent, confianza = predecir(pipeline, texto)
 
-    if intent == 'desconocido' or intent not in respuestas:
+    if intent != 'desconocido' and intent in respuestas:
         return {
-            'intent': 'desconocido',
-            'confianza': confianza,
-            'respuesta': "Lo siento, no he entendido tu pregunta."
+            'intent':    intent,
+            'nivel':     'svm',
+            'confianza': round(confianza, 3),
+            'respuesta': random.choice(respuestas[intent])
         }
 
+    # ── Nivel 3: RAG por similitud coseno ────────────────────────────────────
+    resultados = retriever.buscar(texto, umbral=0.15)
+
+    if resultados:
+        mejor = resultados[0]
+        return {
+            'intent':    'rag_kb',
+            'nivel':     'rag',
+            'confianza': mejor['similitud'],
+            'respuesta': retriever.formatear_respuesta(mejor)
+        }
+
+    # ── Nivel 4: fallback ────────────────────────────────────────────────────
     return {
-        'intent': intent,
-        'confianza': round(confianza, 3),
-        'respuesta': random.choice(respuestas[intent])
+        'intent':    'desconocido',
+        'nivel':     'fallback',
+        'confianza': confianza,
+        'respuesta': (
+            "Lo siento, no tengo información sobre eso. "
+            "Puedes llamarnos al 925 23 34 54 o escribirnos a "
+            "almacen@olivillatres.com y te ayudamos."
+        )
     }
 
 
-# ── HTML inline (sin ficheros estáticos externos) ────────────────────────────
+# ── HTML inline ───────────────────────────────────────────────────────────────
 
 HTML = """<!DOCTYPE html>
 <html lang="es">
@@ -103,6 +154,9 @@ HTML = """<!DOCTYPE html>
   .msg.user .bubble { background: #4f46e5; color: white; border-radius: 16px 4px 16px 16px; }
   .meta { font-size: 11px; opacity: 0.55; margin-top: 3px; }
   .msg.user .meta { text-align: right; }
+  .nivel-rag  { color: #059669; font-weight: 600; }
+  .nivel-svm  { color: #4f46e5; font-weight: 600; }
+  .nivel-exacto { color: #d97706; font-weight: 600; }
   .input-area { padding: 14px 16px; border-top: 1px solid #e5e7eb; display: flex; gap: 8px; }
   input[type=text] { flex: 1; padding: 10px 14px; border: 1.5px solid #e5e7eb;
                      border-radius: 24px; outline: none; font-size: 14px; }
@@ -125,18 +179,19 @@ HTML = """<!DOCTYPE html>
   <div class="messages" id="messages">
     <div class="msg bot">
       <div>
-        <div class="bubble">¡Hola! Soy el asistente virtual de la empresa. Puedo ayudarte con información sobre productos, horarios, envíos, devoluciones y más. ¿En qué puedo ayudarte?</div>
+        <div class="bubble">¡Hola! Soy el asistente virtual de Olivilla Tres. Puedo ayudarte con productos, horarios, envíos, devoluciones y más. ¿En qué puedo ayudarte?</div>
       </div>
     </div>
   </div>
   <div class="suggestions">
     <span class="chip" onclick="enviarChip(this)">¿Qué horario tenéis?</span>
-    <span class="chip" onclick="enviarChip(this)">¿Cómo hago una devolución?</span>
+    <span class="chip" onclick="enviarChip(this)">Tengo goteras en la terraza</span>
+    <span class="chip" onclick="enviarChip(this)">¿Tenéis lana mineral?</span>
     <span class="chip" onclick="enviarChip(this)">Métodos de pago</span>
-    <span class="chip" onclick="enviarChip(this)">Plazos de envío</span>
   </div>
   <div class="input-area">
-    <input type="text" id="user-input" placeholder="Escribe tu pregunta..." onkeydown="if(event.key==='Enter') enviar()">
+    <input type="text" id="user-input" placeholder="Escribe tu pregunta..."
+           onkeydown="if(event.key==='Enter') enviar()">
     <button onclick="enviar()">Enviar</button>
   </div>
 </div>
@@ -152,19 +207,23 @@ HTML = """<!DOCTYPE html>
       body: JSON.stringify({mensaje: texto})
     });
     const data = await res.json();
-    agregarMensaje(data.respuesta, 'bot', data.intent, data.confianza);
+    agregarMensaje(data.respuesta, 'bot', data.intent, data.confianza, data.nivel);
   }
+
   function enviarChip(el) {
     document.getElementById('user-input').value = el.textContent;
     enviar();
   }
-  function agregarMensaje(texto, tipo, intent='', confianza=null) {
+
+  function agregarMensaje(texto, tipo, intent='', confianza=null, nivel='') {
     const cont = document.getElementById('messages');
     const div  = document.createElement('div');
     div.className = 'msg ' + tipo;
     let meta = '';
     if (tipo === 'bot' && intent) {
-      meta = `<div class="meta">intent: ${intent} · confianza: ${(confianza*100).toFixed(0)}%</div>`;
+      const nivelClass = nivel ? `nivel-${nivel}` : '';
+      const nivelLabel = nivel ? ` · <span class="${nivelClass}">${nivel}</span>` : '';
+      meta = `<div class="meta">intent: ${intent}${nivelLabel} · confianza: ${(confianza*100).toFixed(0)}%</div>`;
     }
     div.innerHTML = `<div><div class="bubble">${texto}</div>${meta}</div>`;
     cont.appendChild(div);
@@ -174,6 +233,8 @@ HTML = """<!DOCTYPE html>
 </body>
 </html>"""
 
+
+# ── Rutas Flask ───────────────────────────────────────────────────────────────
 
 @app.route('/')
 def index():
@@ -186,14 +247,12 @@ def chat():
     if not data or 'mensaje' not in data:
         return jsonify({'error': 'Falta el campo mensaje'}), 400
     resultado = obtener_respuesta(data['mensaje'])
-
     print("Resultado enviado:", resultado)
-
     return jsonify(resultado)
+
 
 @app.route('/intents', methods=['GET'])
 def listar_intents():
-    """Endpoint de utilidad: lista los intents disponibles."""
     return jsonify({'intents': list(respuestas.keys())})
 
 

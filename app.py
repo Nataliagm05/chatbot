@@ -46,7 +46,7 @@ entrenar(
 with open(MODELO_PATH, 'rb') as f:
     modelo_data = pickle.load(f)
 
-pipeline   = modelo_data['pipeline']
+svm        = modelo_data['svm']
 respuestas = modelo_data['respuestas']
 
 # Inicializar Retriever RAG
@@ -88,7 +88,7 @@ def obtener_respuesta(texto: str):
             }
 
     # ── Nivel 2: clasificador SVM ─────────────────────────────────────────────
-    intent, confianza = predecir(pipeline, texto)
+    intent, confianza = predecir(svm, texto)
 
     if intent != 'desconocido' and intent in respuestas:
         return {

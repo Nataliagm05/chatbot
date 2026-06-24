@@ -103,7 +103,7 @@ def obtener_respuesta(texto: str):
         }
 
     # ── Nivel 3: RAG por similitud coseno ────────────────────────────────────
-    resultados = retriever.buscar(texto, umbral=0.15)
+    resultados = retriever.buscar(texto, umbral=0.38)
 
     if resultados:
         mejor = resultados[0]
